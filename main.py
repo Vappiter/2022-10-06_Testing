@@ -52,7 +52,9 @@ def number_doc(doc):
    return None
 
 def number_shelf(shelf):
+  
   """Function output # shelf after # documents """
+  
   print ('ПОЛКА, ГДЕ НАХОДИТСЯ ДОКУМЕНТ')
   var_number = input ("\n Введите № документа: ")
   Doc_True = False

@@ -1,5 +1,5 @@
 import pytest
-from main import number_doc, number_shelf
+from main import number_doc
 
 doc_test = [
         {"type": "passport", "number": "2207 876234", "name": "Василий Гупкин"},
@@ -8,8 +8,8 @@ doc_test = [
       ]
 
 class TestFunction:
-     @pytest.mark.parametrize("doc", doc_test)
-     def test_number_doc(self, doc):
-       result = number_doc (doc)
-       assert result == result
-       pass  
+    @pytest.mark.parametrize("doc", doc_test)  
+    def test_number_doc(self, doc):
+      result = number_doc (doc)
+      assert result == result
+      pass  

@@ -1,4 +1,3 @@
-from pydoc import doc
 import pytest
 from main import number_doc, number_shelf
 
@@ -9,9 +8,8 @@ doc_test = [
       ]
 
 class TestFunction:
-     
      @pytest.mark.parametrize("doc", doc_test)
-     def test_number_doc(self):
+     def test_number_doc(self, doc):
        result = number_doc (doc)
-       assert   
+       assert result == result
        pass  

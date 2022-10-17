@@ -40,13 +40,16 @@ def number_doc(doc):
   """Function output Name after # documents """
   
   print ('ИМЯ, КОМУ ПРИНАДЛЕЖИТ ДОКУМЕНТ')
+  print ('Существуют такие документы')
+  for var1 in range (0,len(doc)):
+    print (doc[var1]['number']) 
   var_number = input ("\n Введите № документа: ")
   Doc_True = False
   for i1 in range (0,len(doc)):
     if var_number in doc[i1].values():
      Doc_True = True   
-     print (doc[i1]['name'])
-     return () 
+    #  print (doc[i1]['name'])
+     return (doc[i1]['name']) 
   if Doc_True == False:   
    print('\n Нет такого документа')  
    return None

@@ -1,3 +1,6 @@
+# import tests.test_pytest
+
+
 documents = [
         {"type": "passport", "number": "2207 876234", "name": "Василий Гупкин"},
         {"type": "invoice", "number": "11-2", "name": "Геннадий Покемонов"},
@@ -41,8 +44,8 @@ def number_doc(doc):
   
   print ('ИМЯ, КОМУ ПРИНАДЛЕЖИТ ДОКУМЕНТ')
   print ('Существуют такие документы')
-  for var1 in range (0,len(doc)):
-    print (doc[var1]['number']) 
+  # for var1 in range (0,len(doc)):
+  #   print (doc[var1]['number']) 
   var_number = input ("\n Введите № документа: ")
   Doc_True = False
   for i1 in range (0,len(doc)):
@@ -157,5 +160,9 @@ def shelf_add():
 # print (directories)
 
 if __name__ == '__main__':
- while My_input() != "Q":
-     My_input()
+  
+ print('__file__={0:<35} | __name__={1:<20} | __package__={2:<20}'.format(__file__,__name__,str(__package__)))
+ 
+  
+#  while My_input() != "Q":
+#      My_input()

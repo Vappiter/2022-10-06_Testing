@@ -11,8 +11,12 @@ doc_test = [
 
 class TestFunction:
     
-    @pytest.mark.parametrize("doc", doc_test)  
+    test_number_doc = self.new_method()  
     def test_number_doc(self, doc):
       result = number_doc(doc)
       assert result == result
-      pass  
+      pass 
+
+    def new_method(self):
+        @pytest.mark.parametrize("doc", doc_test)
+        return test_number_doc 
